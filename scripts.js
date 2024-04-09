@@ -1,20 +1,24 @@
 const menuToggle = document.querySelector('.menu-toggle');
-const hamburger = document.querySelector('.hamburger');
-const close = document.querySelector('.cross');
+const hamburger = menuToggle.querySelector('.hamburger');
+const cross = menuToggle.querySelector('.cross');
 const listMobile = document.querySelector('.listMobile');
 
-let isOpen = true;
+cross.classList.add('hidden'); // Ocultar el icono "X" inicialmente
 
-menuToggle.addEventListener('click', () => {
-  isOpen = !isOpen; // Toggle the isOpen flag
+let isOpen = false;
+
+const toggleMenu = () => {
+  isOpen = !isOpen;
 
   if (isOpen) {
-    hamburger.style.display = 'grid';
-    close.style.display = 'none';
-    listMobile.style.display = 'none';
+    listMobile.classList.add('active');
+    hamburger.classList.add('hidden');
+    cross.classList.remove('hidden');
   } else {
-    hamburger.style.display = 'none';
-    close.style.display = 'grid';
-    listMobile.style.display = 'grid';
+    listMobile.classList.remove('active');
+    hamburger.classList.remove('hidden');
+    cross.classList.add('hidden');
   }
-});
+};
+
+menuToggle.addEventListener('click', toggleMenu);
