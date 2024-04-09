@@ -70,3 +70,7 @@ html {
 body {
   font-weight: 300;
 }
+
+.main {
+  padding: 4rem 3rem;
+}
