@@ -1,5 +1,5 @@
 .about {
-  padding: 5rem 0;
+  padding: 5rem 3rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -43,7 +43,7 @@
     gap: 4rem;
     & .videoPresentation {
       & img {
-        width: 60dvw;
+        width: 65dvw;
       }
     }
   }
