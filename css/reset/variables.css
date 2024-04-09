@@ -9,6 +9,9 @@
   --secondary-orange-2: #fff3e0;
   --white: #fefefe;
   --black: #191919;
+  --btn-color-orange: #664617;
+  --btn-color-green: #176a56;
+  --bg-btn-green: #e8fff9;
   /** Wireframe Colors **/
   --wireframe-gray-1: #d9d9d9;
   --wireframe-gray-2: #8e8e8e;
@@ -32,7 +35,7 @@
   --font-lg: 18px;
   --font-xl: 20px;
   --font-xxl: 24px;
-  
+
   --font-h1: 52px;
   --font-h2: 36px;
   --font-h3: 24px;
