@@ -1,5 +1,4 @@
 .insurance {
-  background-color: var(--wireframe-gray-1);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -8,9 +7,6 @@
   & .insurance-list {
     background-color: var(--secondary-green-1);
     max-width: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.3),
-      0 0 30px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
 
     & h2 {
       color: var(--text-dark-green);
@@ -39,11 +35,11 @@
 
   & .insurance-image {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     max-width: 50%;
     & img {
-      width: 80%;
+      width: 60%;
     }
   }
 
