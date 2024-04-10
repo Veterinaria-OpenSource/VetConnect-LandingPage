@@ -1,6 +1,7 @@
 .header {
   & .nav {
     position: fixed;
+    z-index: 5;
     background-color: var(--primary-green);
     width: 100%;
     display: flex;
