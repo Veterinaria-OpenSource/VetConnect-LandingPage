@@ -27,7 +27,7 @@
     }
 
     & p {
-      font-size: var(--font-md);
+      font-size: var(--font-lg);
       color: var(--text-orange);
       font-weight: 700;
     }
