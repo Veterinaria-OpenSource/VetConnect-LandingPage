@@ -1,0 +1,50 @@
+.about {
+  padding: 5rem 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+  & .videoPresentation {
+    & img {
+      width: 40dvw;
+    }
+  }
+
+  & .presentationText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: 500px;
+    max-width: 700px;
+
+    & h2 {
+      font-size: var(--font-h2);
+      color: var(--text-green);
+      font-weight: 800;
+    }
+
+    & p {
+      font-size: var(--font-lg);
+      color: var(--text-orange);
+      font-weight: 700;
+    }
+
+    & .containerOne,
+    & .containerTwo {
+      display: grid;
+      gap: 1.5rem;
+    }
+  }
+
+  @media screen and (width<= 932px) {
+    gap: 4rem;
+    & .videoPresentation {
+      & img {
+        width: 65dvw;
+      }
+    }
+  }
+}

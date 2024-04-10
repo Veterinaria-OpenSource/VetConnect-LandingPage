@@ -1,0 +1,101 @@
+.businesses {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap-reverse;
+  gap: 6rem;
+  align-items: center;
+  padding: 5rem 0;
+
+  & .businesses-list {
+    background-color: var(--secondary-orange-1);
+    max-width: 50%;
+    & h2 {
+      color: var(--text-dark-green);
+      font-size: var(--font-h2);
+      text-align: center;
+      padding: 5rem 3rem 0 3rem;
+    }
+    & ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 5rem 3rem;
+      gap: 3rem;
+      width: 360px;
+      max-width: 100%;
+
+      & li {
+        font-size: var(--font-md);
+        list-style-type: disc;
+        font-weight: 500;
+      }
+    }
+  }
+  & .map {
+    position: relative;
+    display: flex;
+    z-index: 1;
+    justify-content: first baseline;
+    align-items: center;
+    max-width: 50%;
+    & img {
+      width: 60%;
+    }
+
+    & .pointer {
+      background-image: url(../../assets/svg/pointer.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: 1;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-148%, 5%);
+      width: 8dvw;
+      height: 8dvh;
+    }
+    & .point {
+      background-image: url(../../assets/svg/point.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: 1;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-310%, 80%);
+      width: 3dvw;
+      height: 3dvh;
+    }
+  }
+
+  @media screen and (width <= 932px) {
+    & .map {
+      justify-content: center;
+    }
+  }
+  @media screen and (width <= 660px) {
+    & .businesses-list {
+      max-width: 100%;
+    }
+    & .map {
+      width: 100%;
+      & img {
+        width: 100%;
+      }
+    }
+  }
+  @media screen and (width <= 400px) {
+    & .businesses-list {
+      max-width: 80%;
+    }
+    & .map {
+      width: 100%;
+      & img {
+        width: 100%;
+      }
+    }
+  }
+}

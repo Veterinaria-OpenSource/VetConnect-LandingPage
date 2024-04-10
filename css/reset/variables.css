@@ -1,0 +1,47 @@
+:root {
+  /** Primary Colors **/
+  --primary-green: #54d6b6;
+  --primary-white: #ffffff;
+  /** Secondary Colors **/
+  --secondary-orange-1: #ffbc57;
+  --secondary-green-1: #90ffd7;
+  --secondary-green-2: #1e4e3c;
+  --secondary-orange-2: #fff3e0;
+  --white: #fefefe;
+  --black: #191919;
+  --btn-color-orange: #664617;
+  --btn-color-green: #176a56;
+  --bg-btn-green: #e8fff9;
+  --bg-form-green: #87fbd1;
+  --bg-form-orange: #ffbb57;
+  --bg-footer-green: #2c9b71;
+
+  /** Wireframe Colors **/
+  --wireframe-gray-1: #d9d9d9;
+  --wireframe-gray-2: #8e8e8e;
+  --wireframe-black: #383737;
+  --wireframe-white: #ffffff;
+
+  /** Text Colors **/
+  --text-orange: #ffa621;
+  --text-green: #54d6b6;
+  --text-dark-green: #15221b;
+  --text-orange-2: #ffbc57;
+  --text-green-2: #54d6b6;
+  --text-black: #000000;
+  --text-white: #ffffff;
+
+  /** Font Sizes **/
+
+  --font-xs: 12px;
+  --font-sm: 14px;
+  --font-md: 16px;
+  --font-lg: 18px;
+  --font-xl: 20px;
+  --font-xxl: 24px;
+
+  --font-h1: 52px;
+  --font-h2: 36px;
+  --font-h3: 24px;
+  --font-h4: 18px;
+}

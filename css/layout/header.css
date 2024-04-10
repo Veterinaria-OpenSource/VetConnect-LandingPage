@@ -1,0 +1,154 @@
+.header {
+  & .nav {
+    position: fixed;
+    z-index: 5;
+    background-color: var(--primary-green);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+
+    & .title {
+      width: 20%;
+      cursor: pointer;
+
+      & img {
+        width: 100%;
+      }
+    }
+
+    & .menu-toggle {
+      display: none;
+    }
+
+    & .list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+
+      & li {
+        padding: 1.5rem 0;
+
+        & a {
+          color: var(--black);
+          font-size: var(--font-md);
+          font-weight: 400;
+          transition: all 300ms ease;
+
+          &:hover {
+            color: var(--text-white);
+            transition: all 300ms ease;
+          }
+        }
+
+        & .login {
+          background-color: var(--secondary-orange-1);
+          color: var(--black);
+          padding: 1rem 1.5rem;
+          border-radius: 5px;
+          font-size: var(--font-md);
+          transition: all 300ms ease;
+          &:hover {
+            transition: all 300ms ease;
+            background-color: var(--text-orange);
+            color: var(--text-white);
+          }
+        }
+
+        & .joinUs {
+          background-color: var(--secondary-green-2);
+          color: var(--text-white);
+          padding: 1rem 1.5rem;
+          border-radius: 5px;
+          font-size: var(--font-md);
+          transition: all 300ms ease;
+          &:hover {
+            transition: all 300ms ease;
+            background-color: var(--text-dark-green);
+          }
+        }
+      }
+    }
+
+    & .listMobile {
+      display: none;
+    }
+  }
+
+  @media screen and (width<= 780px) {
+    & .nav {
+      & .title {
+        width: 40%;
+      }
+
+      & .list {
+        display: none;
+      }
+
+      .active {
+        display: grid;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      & .menu-toggle {
+        display: block;
+        position: relative;
+        top: 0;
+        right: 2rem;
+        z-index: 6;
+
+        & .icon {
+          cursor: pointer;
+          font-size: 2rem;
+
+          &:hover {
+            color: var(--text-white);
+            align-self: start;
+          }
+        }
+      }
+
+      & .listMobile {
+        position: absolute;
+        top: 0;
+        left: 0;
+        justify-items: center;
+        height: 100dvh;
+        width: 100dvw;
+        z-index: 2;
+
+        & li {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          & a {
+            width: 100%;
+            height: 100%;
+            font-size: var(--font-md);
+            color: var(--text-black);
+            font-weight: 400;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--primary-green);
+            transition: all 300ms ease;
+
+            &:hover {
+              background-color: var(--secondary-orange-1);
+              color: var(--text-white);
+              transition: all 300ms ease;
+            }
+          }
+        }
+      }
+    }
+  }
+}
