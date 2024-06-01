@@ -3,7 +3,8 @@
 @import url('layout/header.css');
 @import url('sections/hero.css');
 @import url('sections/about.css');
-@import url('sections/benefits.css');
+@import url('sections/benefits-pet.css');
+@import url('sections/benefits-vet.css');
 @import url('sections/insurance.css');
 @import url('sections/businesses.css');
 @import url('sections/footer.css');
