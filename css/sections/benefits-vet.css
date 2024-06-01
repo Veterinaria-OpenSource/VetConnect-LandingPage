@@ -1,0 +1,59 @@
+.benefits-vet {
+    background-image: url(../../assets/svg/patitas.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: content-box;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 3rem;
+    padding: 5rem 0;
+    animation: slide 20s infinite linear alternate;
+    
+    & .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        background-color: rgba(144, 255, 215, 0.8);
+        padding: 5rem 3rem;
+    
+        &:nth-child(2),
+        &:nth-child(4) {
+        background-color: var(--text-orange-2);
+        background-color: rgba(255, 188, 87, 0.8);
+        }
+    
+        
+        & h3 {
+        color: var(--text-dark-green);
+        font-size: var(--font-h3);
+        }
+    
+        & p {
+        max-width: 200px;
+        text-align: center;
+        font-size: var(--font-lg);
+        font-weight: 600;
+        }
+    }
+    @media screen and (width<= 420px) {
+        background-repeat: repeat;
+        background-size: contain;
+    }
+}
+
+@keyframes slide {
+    0% {
+        background-position: 0 100%;
+    }
+    
+    100% {
+        background-position: 100% 0;
+    }
+    
+    0% {
+        background-position: 0 100%;
+    }
+}
